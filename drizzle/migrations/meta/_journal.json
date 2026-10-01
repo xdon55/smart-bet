@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1789367939941,
+      "tag": "0000_phase1_foundation_phase2_wallet",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1789633992626,
+      "tag": "0001_grant_wallet_transact_execute",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1789718886585,
+      "tag": "0002_phone_auth_otp",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1790058552242,
+      "tag": "0003_phase3_sportsbook_core",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1790147079585,
+      "tag": "0004_add_national_id_to_profiles",
+      "breakpoints": true
+    }
+  ]
+}
