@@ -36,6 +36,13 @@
       "when": 1790147079585,
       "tag": "0004_add_national_id_to_profiles",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1790851090670,
+      "tag": "0005_probe",
+      "breakpoints": true
     }
   ]
 }
