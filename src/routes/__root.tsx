@@ -120,7 +120,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   }),
   // The catalogue (fixtures, markets and prices) is read from Supabase once per
   // page load and rendered into the HTML, so the first paint shows real odds.
-  loader: async () => ({ catalogue: await getCatalogue() }),
+  // Retry briefly: a request can drop while the preview server reloads.
+  loader: async () => {
+    for (let attempt = 0; ; attempt++) {
+      try {
+        return { catalogue: await getCatalogue() };
+      } catch (err) {
+        if (attempt >= 3) throw err;
+        await new Promise((r) => setTimeout(r, 800 * (attempt + 1)));
+      }
+    }
+  },
   shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
