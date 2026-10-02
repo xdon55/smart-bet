@@ -64,7 +64,7 @@ function Index() {
   const list = filterMatches(base, filters);
 
   return (
-    <main className="relative mx-auto flex w-full max-w-[968px] gap-2 px-0 py-4 md:grid md:h-[calc(100vh-7.5rem)] md:grid-cols-[minmax(0,6fr)_minmax(0,4fr)] md:overflow-hidden md:px-3 md:py-5">
+    <main className="relative mx-auto flex w-full max-w-[968px] gap-2 px-0 py-4 md:grid md:h-[calc(100vh-7.5rem)] md:grid-cols-[minmax(0,6fr)_minmax(0,4fr)] md:overflow-hidden md:px-3 md:pt-5 md:pb-0">
       <div className="no-scrollbar min-w-0 flex-1 space-y-4 md:h-full md:overflow-y-auto md:pb-5 md:pt-0">
         <section className="no-scrollbar flex gap-3 overflow-x-auto px-3 md:px-0">
           {promos.map((p) => (

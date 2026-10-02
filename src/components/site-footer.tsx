@@ -38,7 +38,7 @@ const info = [
 
 export function SiteFooter() {
   return (
-    <footer className="mt-6 border-t border-border bg-card">
+    <footer className="mt-6 md:mt-0 border-t border-border bg-card">
       <div className="mx-auto grid w-full max-w-[968px] gap-6 px-4 py-8 sm:grid-cols-3">
         <div>
           <p className="font-display text-xl font-bold leading-none">SMARTBET</p>

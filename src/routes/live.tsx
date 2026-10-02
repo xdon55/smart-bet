@@ -34,7 +34,7 @@ function LivePage() {
 
   return (
     <>
-      <main className="relative mx-auto flex w-full max-w-[968px] gap-2 px-0 py-3 md:grid md:h-[calc(100vh-7.5rem)] md:grid-cols-[minmax(0,6fr)_minmax(0,4fr)] md:overflow-hidden md:px-3">
+      <main className="relative mx-auto flex w-full max-w-[968px] gap-2 px-0 py-3 md:grid md:h-[calc(100vh-7.5rem)] md:grid-cols-[minmax(0,6fr)_minmax(0,4fr)] md:overflow-hidden md:px-3 md:pb-0">
         <div className="no-scrollbar min-w-0 flex-1 md:h-full md:overflow-y-auto md:py-3">
           <section className="overflow-hidden md:rounded-lg md:border md:border-border">
             <h1 className="flex items-center gap-2 bg-secondary px-3 py-2 font-display text-sm font-bold uppercase tracking-wide text-secondary-foreground">
